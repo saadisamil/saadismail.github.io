@@ -1,0 +1,65 @@
+
+<html>
+    <head>
+        <title> Ismail Store </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="newcss.css">
+        <script>
+              function openStore(evt, storeName){
+              var i, tabcontent, tablinks;
+              tabcontent=document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++){
+                  tabcontent[i].style.display="none";
+              }
+              tablinks= document.getElementsByClassName("tablinks");
+              for (i = 0; i< tablinks.length; i++){
+                  tablinks[i].className= tablinks[i].className.replace(" active","");
+              }
+              document.getElementById(storeName).style.display="block";
+              evt.currentTarget.className+="active";
+          }
+        </script>
+        
+     </head>
+    <body> 
+        
+        <h1>Welcome to our store for clothes</h1>
+        <div id="NA">
+            Name:<input id="name" type="text"><br>
+            Phone Nb:<input id="Addrese" type="text"><br>
+            <button type="button" onclick="myfunction()">Order</button><br>
+             
+            </div> 
+        <p> welcome to our store for man and women clothes</p>
+        <p>We have two collection of clothe for man and women between the ages of 18-40 years</p>
+        
+         <div class="tab">
+            <button class="tablinks" onclick="openStore(event,'Man')">Man</button>
+            <button class="tablinks" onclick="openStore(event,'Women')">Women</button><br>
+             
+        </div>
+        <p>hello world</p>
+            <div  id="Man" class="tabcontent">
+                <img src="pic4.jpeg" alt="men clothe 1" width="300"><br>
+                <p>Buy this <input type="checkbox" name="40$" value="ON"/></p><br>
+                <h3>==============================</h3>
+                <img src="pic5.jpeg" alt="men clothe 2" width="300"> 
+                <p>Buy this <input type="checkbox" name="40$" value="ON"/></p><br>
+                <h3>==============================</h3>
+                <img src="pic6.jpeg" alt="men clothe 3" width="300">
+                <p>Buy this <input type="checkbox" name="70$" value="ON" /></p><br>
+                
+        </div>
+            <div id="Women" class="tabcontent">
+                <img src="pic1.jpeg " alt="dress 1 " width="300"> 
+                <p>Buy this <input type="checkbox" name="55$" value="ON"/></p><br>
+                <h3>==============================</h3>
+                <img src="pic2.jpeg" alt="dress 2" width="300"> 
+                <p>Buy this <input type="checkbox" name="55$" value="ON"/></p><br>
+                <h3>==============================</h3>
+                <img src="pic3.jpeg" alt="dress 3" width="300"> 
+                <p>Buy this <input type="checkbox" name="60$" value="ON" /></p><br>
+        </div>
+    </body>
+</html> 
