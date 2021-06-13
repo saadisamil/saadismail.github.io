@@ -18,6 +18,9 @@
               }
               document.getElementById(storeName).style.display="block";
               evt.currentTarget.className+="active";
+                 function test(){
+          alert("Your order is sent, please wait us to call you");
+          }
           }
         </script>
         
@@ -28,7 +31,7 @@
         <div id="NA">
             Name:<input id="name" type="text"><br>
             Phone Nb:<input id="Addrese" type="text"><br>
-            <button type="button" onclick="myfunction()">Order</button><br>
+            <button type="button" class="test" onclick="test(event,'test') >Order</button><br>
              
             </div> 
         <p> welcome to our store for man and women clothes</p>
