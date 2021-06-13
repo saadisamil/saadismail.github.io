@@ -1,4 +1,3 @@
-
 <html>
     <head>
         <title> Ismail Store </title>
@@ -18,22 +17,19 @@
               }
               document.getElementById(storeName).style.display="block";
               evt.currentTarget.className+="active";
-                 function test(){
+          } 
+          function test(){
           alert("Your order is sent, please wait us to call you");
-          }
-          }
-        </script>
-        
-     </head>
+      }
+</script>
+    </head>
     <body> 
-        
-        <h1>Welcome to our store for clothes</h1>
+         <h1>Welcome to our store for clothes</h1>
         <div id="NA">
             Name:<input id="name" type="text"><br>
             Phone Nb:<input id="Addrese" type="text"><br>
-            <button type="button" class="test" onclick="test(event,'test') >Order</button><br>
-             
-            </div> 
+            <button type="button" class="test" onclick="test(event,'test')">Order</button>
+           </div> 
         <p> welcome to our store for man and women clothes</p>
         <p>We have two collection of clothe for man and women between the ages of 18-40 years</p>
         
@@ -42,7 +38,8 @@
             <button class="tablinks" onclick="openStore(event,'Women')">Women</button><br>
              
         </div>
-           <div  id="Man" class="tabcontent">
+         
+            <div  id="Man" class="tabcontent">
                 <img src="pic4.jpeg" alt="men clothe 1" width="300"><p> Price:25$<input type="checkbox" name="40$" value="ON"/></p>
                 <h3>==============================</h3>
                 <img src="pic5.jpeg" alt="men clothe 2" width="300"><p> Price:30$<input type="checkbox" name="40$" value="ON"/></p>
@@ -59,3 +56,4 @@
         </div>
     </body>
 </html> 
+ 
